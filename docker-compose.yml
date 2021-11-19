@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  rootnode:
+    container_name: rootnode
+    image: fuocnetwork/rootnode
+    environment:
+      - IP=127.0.0.1
+      - PORT=30301
+      - STATS_NAME=fuo-poa-nod
+      - STATS_SECRET=secret
+      - STATS_HOST=host
+      - STATS_PORT=3000
+    network_mode: "host"
+    restart: always
+    volumes:
+      - ./node:/root/.ethereum
