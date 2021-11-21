@@ -11,6 +11,7 @@ services:
       - STATS_SECRET=secret
       - STATS_HOST=host
       - STATS_PORT=3000
+      - ENODE=enode
     network_mode: "host"
     restart: always
     volumes:
