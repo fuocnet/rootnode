@@ -7,7 +7,7 @@ services:
     environment:
       - IP=127.0.0.1
       - PORT=30301
-      - STATS_NAME=fuo-poa-node
+      - STATS_NAME=fuoc-poa-node
       - STATS_SECRET=secret
       - STATS_HOST=host
       - STATS_PORT=3000
